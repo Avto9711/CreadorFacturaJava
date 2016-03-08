@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name = "dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name = "connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name = "connection.url">jdbc:mysql://127.0.0.1/compracotizacion</property>
+		<property name = "connection.username">remote</property>
+		<property name = "connection.password">1234</property>
+		<property name = "hbm2ddl.auto">update</property>
+		<mapping class = "Modelo.Factura"></mapping>
+		<mapping class = "Modelo.Producto"></mapping>
+		<mapping class = "Modelo.Cotizacion"></mapping>
+		<mapping class = "Modelo.ProductoCotizacion"></mapping>
+	</session-factory>
+</hibernate-configuration>
