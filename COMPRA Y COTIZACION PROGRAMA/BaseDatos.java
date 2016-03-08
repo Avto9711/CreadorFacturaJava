@@ -492,13 +492,7 @@ public class BaseDatos{
 					double valorDescuento  = ((precioProductoparacalcular * descuentoProducto) /100);
 					
 					double aplicarDescuento = (precioProductoparacalcular - valorDescuento);
-					// double valorImpuesto = (precioProductoparacalcular * 0.18);
-					
-					
-					// double valorFinal = (precioProductoparacalcular - valorDescuento);
-					// double	valorFinal2 = (precioProductoparacalcular + valorImpuesto);
-					
-					// double valorFinalVerdadero = (precioProductoparacalcular -(valorFinal - valorImpuesto));
+				
 						txtvalor_neto.setText(String.valueOf(aplicarDescuento));
 		}
 		
